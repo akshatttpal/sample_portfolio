@@ -13,9 +13,11 @@ declare module "gsap-trial/ScrollSmoother" {
   import { Plugin } from "gsap";
   export class ScrollSmoother extends Plugin {
     static create(vars?: any): ScrollSmoother;
+    static refresh(force?: boolean): void;
     constructor(vars?: any);
     paused(value: boolean): void;
     scrollTop(value: number): void;
+    scrollTo(target: any, autoKill?: boolean, offset?: string): void;
     media(query: string, vars: any): void;
   }
 }
