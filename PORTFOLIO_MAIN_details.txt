@@ -1,0 +1,38 @@
+Project: Portfolio_main
+
+Decrypted asset:
+- File: public/models/character.glb
+- Source encrypted file: public/models/character.enc
+- Password used: MyCharacter12
+- Decryption method: AES-256-CBC with SHA-256 derived key and PKCS#7 unpadding
+
+Installed dependencies:
+- Node/npm packages installed in project directory: d:\Portfolio\Portfolio_main\node_modules
+- npm executable used: C:\Program Files\nodejs\npm.cmd
+- Python package installed: pycryptodome
+- Python virtual environment path: d:\Portfolio\Portfolio_main\.venv
+
+Commands used:
+1. Decrypt model file:
+   - Python script used AES decryption and PKCS#7 unpadding
+2. Install Node dependencies:
+   - cmd.exe /c '"C:\Program Files\nodejs\npm.cmd" install'
+3. Run development server:
+   - cmd.exe /c '"C:\Program Files\nodejs\npm.cmd" run dev -- --host 0.0.0.0 --port 4173'
+
+Local app URL:
+- http://localhost:4173/
+
+How to run the project again:
+1. Open terminal in d:\Portfolio\Portfolio_main
+2. Run:
+   cd /d d:\Portfolio\Portfolio_main
+   "C:\Program Files\nodejs\npm.cmd" install
+3. Start the app:
+   "C:\Program Files\nodejs\npm.cmd" run dev -- --host 0.0.0.0 --port 4173
+4. Open browser at http://localhost:4173/
+
+Notes:
+- The app is already running on localhost:4173 in a background terminal.
+- If the app fails due to port conflict, choose another free port and update the command accordingly.
+- The decrypted GLB file is now available for editing/open use at public/models/character.glb.
