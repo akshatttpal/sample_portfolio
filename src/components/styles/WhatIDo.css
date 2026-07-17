@@ -5,7 +5,8 @@
   place-items: center;
   position: relative;
   opacity: 1;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   width: var(--cWidth);
   max-width: 1920px;
   margin: auto;
@@ -34,36 +35,33 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  min-height: 550px;
+  height: auto;
   margin-left: 200px;
   position: relative;
   display: none;
+  gap: 10px;
+  overflow: visible;
+  --what-hover-grow: 15;
 }
 .what-content {
   width: 450px;
-  height: 33%;
-  min-height: 50%;
-  transition: 0.5s;
-  /* border: 0.5px dashed rgba(255, 255, 255, 0.3); */
+  /*min-height: 110px;*/
+  flex: 1 1 0;
+  transition: flex 0.5s ease, padding 0.5s ease;
   position: relative;
-  padding: 50px;
+  padding: 28px 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .what-noTouch:hover,
 .what-content-active {
-  min-height: 67%;
-  padding: 40px 50px;
-}
-
-.what-noTouch:hover ~ .what-content,
-.what-box-in:hover .what-noTouch:not(:hover),
-.what-content.what-sibling {
-  min-height: 33%;
-  padding: 10px 50px;
+  flex: var(--what-hover-grow) 1 0;
+  padding: 28px 40px;
 }
 .what-content h3 {
-  font-size: 35px;
+  font-size: 25px;
   letter-spacing: 1px;
   margin: 0;
 }
@@ -72,6 +70,7 @@
   line-height: 18px;
   font-weight: 200;
   letter-spacing: 0.7px;
+  margin: 0;
 }
 .what-content h4 {
   font-weight: 300;
@@ -84,6 +83,11 @@
   opacity: 0;
   animation: whatFlicker 0.5s 1 forwards;
   animation-delay: 1s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  overflow-y: auto;
 }
 @keyframes whatFlicker {
   0%,
@@ -214,7 +218,7 @@
   font-size: 12px;
   letter-spacing: 1px;
   font-family: "Geist", sans-serif;
-  margin-bottom: 5px;
+  margin: 4px 0 0;
 }
 @keyframes whatBorders {
   80% {
@@ -230,6 +234,7 @@
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
+  margin-top: 2px;
 }
 .what-tags {
   font-size: 13px;
@@ -249,7 +254,8 @@
     margin-right: 20%;
   }
   .what-box-in {
-    height: 400px;
+    min-height: 400px;
+    height: auto;
   }
   .what-content h3 {
     font-size: 28px;
@@ -290,7 +296,8 @@
     padding-bottom: 50px;
   }
   .what-box-in {
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     margin-left: -50px;
   }
   .what-content {
@@ -338,7 +345,8 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    min-height: 450px;
+    height: auto;
   }
   .what-content h5,
   .what-content-flex {

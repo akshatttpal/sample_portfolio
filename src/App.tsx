@@ -1,23 +1,20 @@
 import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-const CharacterModel = lazy(() => import("./components/Character"));
-const MainContainer = lazy(() => import("./components/MainContainer"));
-import { LoadingProvider } from "./context/LoadingProvider";
+const Home = lazy(() => import("./pages/Home"));
+const Patents = lazy(() => import("./pages/Patents"));
 
 const App = () => {
   return (
-    <>
-      <LoadingProvider>
-        <Suspense>
-          <MainContainer>
-            <Suspense>
-              <CharacterModel />
-            </Suspense>
-          </MainContainer>
-        </Suspense>
-      </LoadingProvider>
-    </>
+    <BrowserRouter>
+      <Suspense>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/patents" element={<Patents />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 };
 

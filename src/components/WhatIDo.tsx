@@ -84,29 +84,36 @@ const WhatIDo = () => {
                 />
               </svg>
             </div>
+
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>FRONTEND</h3>
-              <h4>Building Interactive UIs</h4>
+              <h3>WEB DEVELOPMENT</h3>
+              <h4>Building Interactive & Responsive Web Experiences</h4>
               <p>
-                Crafting performant, responsive interfaces with modern frameworks.
-                From SPAs to micro-frontends, I deliver pixel-perfect experiences.
+                Creating modern, responsive, and user-focused web applications using
+                contemporary frontend technologies while ensuring performance and
+                seamless user experiences.
               </p>
-              <h5>Skillset & tools</h5>
+
+              <h5>Skillset & Tools</h5>
+
               <div className="what-content-flex">
-                <div className="what-tags">React.js</div>
-                <div className="what-tags">Angular</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">Material UI</div>
                 <div className="what-tags">HTML5</div>
                 <div className="what-tags">CSS3</div>
+                <div className="what-tags">JavaScript</div>
+                <div className="what-tags">TypeScript</div>
+                <div className="what-tags">React.js</div>
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">Next.js</div>
+                <div className="what-tags">Responsive Design</div>
+                <div className="what-tags">REST APIs</div>
               </div>
+
               <div className="what-arrow"></div>
             </div>
           </div>
+
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 1)}
@@ -124,25 +131,121 @@ const WhatIDo = () => {
                 />
               </svg>
             </div>
+
             <div className="what-corner"></div>
+
             <div className="what-content-in">
-              <h3>BACKEND</h3>
-              <h4>Scalable Server Architecture</h4>
+              <h3>SOFTWARE ENGINEERING</h3>
+              <h4>Designing Reliable & Scalable Software Solutions</h4>
               <p>
-                Designing robust APIs and microservices. From CMS platforms to
-                complex business logic, I build backends that scale.
+                Developing efficient software systems with a strong focus on
+                problem-solving, system design, database management, and software
+                engineering best practices.
               </p>
-              <h5>Skillset & tools</h5>
+
+              <h5>Skillset & Tools</h5>
+
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Microservices</div>
+                <div className="what-tags">Java</div>
                 <div className="what-tags">Python</div>
+                <div className="what-tags">C++</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">Git</div>
+                <div className="what-tags">Data Structures</div>
+                <div className="what-tags">System Design</div>
+                <div className="what-tags">Cryptography</div>
               </div>
+
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+
+            <div className="what-corner"></div>
+
+            <div className="what-content-in">
+              <h3>CLOUD & AUTOMATION</h3>
+              <h4>Optimizing Workflows Through Cloud Technologies</h4>
+              <p>
+                Leveraging AWS Cloud Services and automation tools to streamline
+                processes, improve efficiency, and deploy scalable solutions.
+              </p>
+
+              <h5>Skillset & Tools</h5>
+
+              <div className="what-content-flex">
+                <div className="what-tags">AWS</div>
+                <div className="what-tags">Cloud Deployment</div>
+                <div className="what-tags">EC2</div>
+                <div className="what-tags">S3</div>
+                <div className="what-tags">IAM</div>
+                <div className="what-tags">UiPath</div>
+                <div className="what-tags">Automation</div>
+                <div className="what-tags">Workflow Design</div>
+              </div>
+
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 3)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+
+            <div className="what-corner"></div>
+
+            <div className="what-content-in">
+              <h3>AI & INTELLIGENT SYSTEMS</h3>
+              <h4>Building Intelligent Applications & IoT Solutions</h4>
+              <p>
+                Developing AI-powered and IoT-based solutions that combine data,
+                automation, and embedded systems to solve real-world challenges.
+              </p>
+
+              <h5>Skillset & Tools</h5>
+
+              <div className="what-content-flex">
+                <div className="what-tags">Machine Learning</div>
+                <div className="what-tags">Robotics</div>
+                <div className="what-tags">YOLOv5</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">Embedded Systems</div>
+                <div className="what-tags">Product Design</div>
+                <div className="what-tags">NodeMCU</div>
+                <div className="what-tags">IoT</div>
+              </div>
+
               <div className="what-arrow"></div>
             </div>
           </div>

@@ -10,17 +10,17 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:rajeshchittyal21@gmail.com" data-cursor="disable">
-                rajeshchittyal21@gmail.com
+              <a href="mailto:akshatpal910@gmail.com" data-cursor="disable">
+                akshatpal910@gmail.com
               </a>
             </p>
             <h4>Education</h4>
-            <p>BSc in Computer Science</p>
+            <p>B.Tech in Computer Science Engineering (with specialisation in AI and Robotics) </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/khushi-varshney17"
+              href="https://github.com/AkshatCipher"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -28,23 +28,23 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/khushi-varshney17"
+              href="https://www.linkedin.com/in/akshat-pal10"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
               Linkedin <MdArrowOutward />
             </a>
-            <a
-              href="https://x.com/khushi_varshney17"
+            {/*<a
+              href="https://x.com/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
               Twitter <MdArrowOutward />
-            </a>
+            </a>*/}
             <a
-              href="https://www.instagram.com/khushi.varshney17"
+              href="https://www.instagram.com/AkshatttPal"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -54,10 +54,10 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Khushi Varshney</span>
+              Developed <br /> by <span>Akshat Pal</span>
             </h2>
             <h5>
-              <MdCopyright /> 2025
+              <MdCopyright /> 2026
             </h5>
           </div>
         </div>
